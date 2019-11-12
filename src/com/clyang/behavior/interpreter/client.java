@@ -3,8 +3,8 @@ package com.clyang.behavior.interpreter;
 public class client {
     public static void main(String[] args) {
         Context ctx = new Context();
-        Variable x = new Variable("x");
-        Variable y = new Variable("y");
+        Variable x = new Variable("x",ctx);
+        Variable y = new Variable("y",ctx);
         Constant c = new Constant(true);
         ctx.assign(x, false);
         ctx.assign(y, true);

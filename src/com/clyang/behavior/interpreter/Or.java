@@ -37,9 +37,7 @@ public class Or extends Expression{
 
     @Override
     public String toString() {
-        return "Or{" +
-                "left=" + left +
-                ", right=" + right +
-                '}';
+        return  "("+left +" Or "+right+")";
+
     }
 }

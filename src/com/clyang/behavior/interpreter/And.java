@@ -37,9 +37,6 @@ public class And  extends Expression{
 
     @Override
     public String toString() {
-        return "And{" +
-                "left=" + left +
-                ", right=" + right +
-                '}';
+        return "("+left +" And " + right +")";
     }
 }

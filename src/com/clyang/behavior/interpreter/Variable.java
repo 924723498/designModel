@@ -4,13 +4,16 @@ import java.util.Objects;
 
 public class Variable extends Expression {
     private String name;
+    private Context ctx;
 
-    public Variable(String name) {
+    public Variable(String name,Context ctx) {
+        this.ctx=ctx;
         this.name = name;
     }
 
     @Override
     public boolean interpret(Context ctx) {
+
         return ctx.lookup(this);
     }
 
@@ -33,8 +36,7 @@ public class Variable extends Expression {
 
     @Override
     public String toString() {
-        return "Variable{" +
-                "name='" + name + '\'' +
-                '}';
+//        return " "+ctx.lookup(this) +" ";
+        return " "+name +" ";
     }
 }

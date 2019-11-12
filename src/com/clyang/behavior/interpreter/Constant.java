@@ -34,8 +34,6 @@ public class Constant extends Expression{
 
     @Override
     public String toString() {
-        return "Constant{" +
-                "value=" + value +
-                '}';
+        return " |" +value+ "| ";
     }
 }

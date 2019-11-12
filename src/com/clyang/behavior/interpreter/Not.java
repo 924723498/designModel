@@ -16,8 +16,12 @@ public class Not extends Expression{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o){
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()){
+            return false;
+        }
         Not not = (Not) o;
         return Objects.equals(exp, not.exp);
     }
@@ -29,8 +33,6 @@ public class Not extends Expression{
 
     @Override
     public String toString() {
-        return "Not{" +
-                "exp=" + exp +
-                '}';
+        return "(!" +exp+")" ;
     }
 }
