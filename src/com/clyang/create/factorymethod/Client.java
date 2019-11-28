@@ -1,6 +1,6 @@
 package com.clyang.create.factorymethod;
 
-public class FactoryMethodTest {
+public class Client {
     public static void main(String[] args) {
         String data="10000";
         ExportFactory factory = new ExportTxtFactory();
